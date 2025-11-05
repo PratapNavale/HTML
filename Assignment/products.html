@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Products | NikeHub</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" alt="Nike Logo">
+                <span>Assingment</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="rate-us.html">Rate Us</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <div class="page-header">
+            <h1>Nike Shoes Collection</h1>
+            <p>Find your perfect fit from our extensive selection of premium Nike shoes</p>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Section -->
+            <aside class="filters">
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Running
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Basketball
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Lifestyle
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Training
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Soccer
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Under $100
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> $100 - $150
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> $150 - $200
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Over $200
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <span class="color-option black" title="Black"></span>
+                        <span class="color-option white" title="White"></span>
+                        <span class="color-option red" title="Red"></span>
+                        <span class="color-option blue" title="Blue"></span>
+                        <span class="color-option green" title="Green"></span>
+                        <span class="color-option orange" title="Orange"></span>
+                        <span class="color-option purple" title="Purple"></span>
+                        <span class="color-option multi" title="Multi-Color"></span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Size</h3>
+                    <div class="size-options">
+                        <span class="size-option">7</span>
+                        <span class="size-option">7.5</span>
+                        <span class="size-option">8</span>
+                        <span class="size-option">8.5</span>
+                        <span class="size-option">9</span>
+                        <span class="size-option">9.5</span>
+                        <span class="size-option">10</span>
+                        <span class="size-option">10.5</span>
+                        <span class="size-option">11</span>
+                        <span class="size-option">11.5</span>
+                        <span class="size-option">12</span>
+                        <span class="size-option">13</span>
+                    </div>
+                </div>
+
+                <button class="btn primary btn-filter">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <section class="products-grid">
+                <div class="products-toolbar">
+                    <div class="results-count">
+                        <span>24 Products</span>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort">Sort By:</label>
+                        <select id="sort" name="sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="top-rated">Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">New</div>
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png" alt="Nike Air Force 1">
+                        <h3>Nike Air Force 1</h3>
+                        <div class="product-category">Lifestyle</div>
+                        <div class="product-price">$110</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(120)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-badge">Popular</div>
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7c5678f4-c28d-4862-a8d9-56750f839f12/zegama-trail-running-shoes-9k2rDQ.png" alt="Nike Zegama">
+                        <h3>Nike Zegama</h3>
+                        <div class="product-category">Running</div>
+                        <div class="product-price">$160</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(86)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3eb254d-0901-4158-956a-4610180545e5/dunk-low-shoes-screVm.png" alt="Nike Dunk Low">
+                        <h3>Nike Dunk Low</h3>
+                        <div class="product-category">Basketball</div>
+                        <div class="product-price">$115</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(102)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-badge">Sale</div>
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/55e2c0a3-6a25-4fe3-b568-098171de7cb6/pegasus-40-road-running-shoes-ztffW8.png" alt="Nike Pegasus 40">
+                        <h3>Nike Pegasus 40</h3>
+                        <div class="product-category">Running</div>
+                        <div class="product-price"><span class="original-price">$130</span> $99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(78)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/81d43939-7a43-44ee-9f1c-72fd40603371/air-max-90-shoes-N8mdtK.png" alt="Nike Air Max 90">
+                        <h3>Nike Air Max 90</h3>
+                        <div class="product-category">Lifestyle</div>
+                        <div class="product-price">$130</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(94)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/da3a304a-de8d-4a4a-8224-999d82a4a10c/tiempo-legend-10-elite-fg-football-boots-Hz2hk8.png" alt="Nike Tiempo Legend">
+                        <h3>Nike Tiempo Legend</h3>
+                        <div class="product-category">Soccer</div>
+                        <div class="product-price">$230</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(45)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-badge">New</div>
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3e1a9f29-4ad2-4818-8c6a-55067aee7eb7/air-jordan-1-mid-shoes-SQf7DM.png" alt="Air Jordan 1 Mid">
+                        <h3>Air Jordan 1 Mid</h3>
+                        <div class="product-category">Basketball</div>
+                        <div class="product-price">$125</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(136)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fc4b2397-f2aa-45c9-a57d-6e790c26de98/superrep-go-3-flyknit-next-nature-training-shoes-H7c5Kj.png" alt="Nike SuperRep Go 3">
+                        <h3>Nike SuperRep Go 3</h3>
+                        <div class="product-category">Training</div>
+                        <div class="product-price">$100</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★☆☆</span>
+                            <span class="count">(32)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-badge">Sale</div>
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/nxjbjimasoxr4ngrb0hp/air-zoom-alphafly-next-2-road-racing-shoes-lkx7Gp.png" alt="Nike Air Zoom Alphafly">
+                        <h3>Nike Air Zoom Alphafly</h3>
+                        <div class="product-category">Running</div>
+                        <div class="product-price"><span class="original-price">$275</span> $230</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(89)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b750378-879f-4bc7-b247-a3b59a45459e/free-metcon-5-training-shoes-jCBrwG.png" alt="Nike Free Metcon 5">
+                        <h3>Nike Free Metcon 5</h3>
+                        <div class="product-category">Training</div>
+                        <div class="product-price">$120</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(56)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0a162df9-3c98-4cbe-acf3-339d934b2953/infinity-run-3-road-running-shoes-mLRjcz.png" alt="Nike Infinity Run 3">
+                        <h3>Nike Infinity Run 3</h3>
+                        <div class="product-category">Running</div>
+                        <div class="product-price">$160</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(67)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="product-card">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/lebron-witness-7-basketball-shoes-v9QZGj.png" alt="Nike LeBron Witness 7">
+                        <h3>Nike LeBron Witness 7</h3>
+                        <div class="product-category">Basketball</div>
+                        <div class="product-price">$105</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(42)</span>
+                        </div>
+                        <a href="#" class="btn-product">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+                    <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About NikeHub</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Updated</h4>
+                <p>Sign up for our newsletter</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 NikeHub. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

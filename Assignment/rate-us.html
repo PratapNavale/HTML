@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Rate Us | NikeHub</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" alt="Nike Logo">
+                <span>Assingment</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="rate-us.html" class="active">Rate Us</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="rate-us-page">
+        <div class="page-header">
+            <h1>Rate Your Experience</h1>
+            <p>Your feedback helps us improve our products and services</p>
+        </div>
+
+        <section class="rating-section">
+            <div class="rating-container">
+                <div class="rating-intro">
+                    <h2>Share Your Thoughts</h2>
+                    <p>We value your feedback and are committed to providing the best shopping experience. Please take a moment to share your thoughts with us.</p>
+                </div>
+
+                <form class="rating-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchase">Have you purchased from us before?</label>
+                        <select id="purchase" name="purchase" required>
+                            <option value="">Please select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group rating-stars">
+                        <label>Overall Experience</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rate the following aspects</label>
+                        <div class="aspect-ratings">
+                            <div class="aspect-rating-item">
+                                <span class="aspect-label">Product Quality</span>
+                                <div class="aspect-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="aspect-rating-item">
+                                <span class="aspect-label">Website Experience</span>
+                                <div class="aspect-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="aspect-rating-item">
+                                <span class="aspect-label">Customer Service</span>
+                                <div class="aspect-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="aspect-rating-item">
+                                <span class="aspect-label">Value for Money</span>
+                                <div class="aspect-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">Comments or Suggestions</label>
+                        <textarea id="feedback" name="feedback" rows="5" placeholder="Please share your detailed feedback or suggestions"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Would you recommend us to a friend?</label>
+                        <div class="recommend-options">
+                            <label class="radio-option">
+                                <input type="radio" name="recommend" value="yes"> Yes
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="recommend" value="no"> No
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="recommend" value="maybe"> Maybe
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary btn-submit-rating">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Read testimonials from our satisfied customers</p>
+            </div>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The Nike Air Max are the most comfortable shoes I've ever owned. The customer service was exceptional when I needed help with sizing."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D.">
+                        <div>
+                            <h4>Pratap. N</h4>.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-rating">★★★★☆</div>
+                    <p class="testimonial-text">"I love my new Nike Pegasus! Delivery was fast and the quality is amazing. Would definitely shop here again."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M.">
+                        <div>
+                            <h4>Animesh .N.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Great selection of Nike products. The website is easy to navigate, and I found exactly what I was looking for within minutes."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael T.">
+                        <div>
+                            <h4>AAA. B</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Join Our Loyalty Program</h2>
+                <p>Get exclusive access to special offers, early product releases, and more by joining our loyalty program.</p>
+                <a href="#" class="btn primary">Join Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About NikeHub</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Updated</h4>
+                <p>Sign up for our newsletter</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 NikeHub. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
