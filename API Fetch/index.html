@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Assignment-3</title>
+</head>
+<body>
+    
+    <button id="btn">Get Data</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+            <tbody id="tableBody"></tbody>
+    </table>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", ()=>{
+            let p1 = fetch("https://jsonplaceholder.typicode.com/todos");
+            p1.then((response) => {
+                let p2 = response.json();
+                p2.then((result) =>{
+                    let tablebody = document.getElementById("tableBody");
+
+                    result.forEach(task => {
+                        let row = `<tr>
+                        <td>${task.userId}</td>
+                        <td>${task.id}</td>
+                        <td>${task.title}</td>
+                        <td>${task.completed}</td>
+                        </tr>`;
+
+                        tablebody.innerHTML += row;
+                    });
+
+                });
+            });
+            p1.catch((error) => {
+                console.log("Error while fetching the data form API");
+            })
+        });
+    </script>
+</body>
+</html>
